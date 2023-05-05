@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCD3C"
+    tools:context=".NotepaddInformation"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="382dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/raunded_corner"
+
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="#30FFCD3C"
+            android:gravity="center"
+            android:hint="Title">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/title2"
+            android:layout_width="match_parent"
+            android:layout_height="334dp"
+
+            android:layout_marginTop="20dp"
+            android:background="#30FFCD3C"
+            android:gravity="top"
+            android:hint="Description"
+            android:lines="20">
+
+
+        </EditText>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="save"
+        android:text="SAVE NOTE"
+        android:textColor="#FFCC3B"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="247dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="delete"
+        android:text="DELETE NOTE"
+        android:textColor="#FFCC3B"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
